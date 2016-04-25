@@ -32,11 +32,7 @@
     - vars/main.yml
   tasks:
     - name: docker commit
-      command: "docker commit tmp-oracle-database {{ organization }}/{{ image_name }}:{{ item }}"
-      with_items: "{{ tags }}"
-
-    - name: docker push
-      command: "docker push {{ organization }}/{{ image_name }}:{{ item }}"
+      command: "docker commit tmp-oracle-database {{ image_name }}:{{ item }}"
       with_items: "{{ tags }}"
 
     - name: docker kill
@@ -44,3 +40,8 @@
 
     - name: docker rm
       command: "docker rm tmp-oracle-database"
+
+    # image should be push into a private registry
+    # - name: docker push
+    #   command: "docker push {{ image_name }}:{{ item }}"
+    #   with_items: "{{ tags }}"
