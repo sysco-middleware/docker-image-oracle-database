@@ -1,0 +1,30 @@
+INFO: INFO: ------------------List of failed Tasks------------------
+INFO: INFO: *********************************************
+INFO: INFO: Swap Size: This is a prerequisite condition to test whether sufficient total swap space is available on the system.
+INFO: INFO: Severity:IGNORABLE
+INFO: INFO: OverallStatus:VERIFICATION_FAILED
+INFO: INFO: *********************************************
+INFO: INFO: Run Level: This is a prerequisite condition to test whether the system is running with proper run level.
+INFO: INFO: Severity:IGNORABLE
+INFO: INFO: OverallStatus:OPERATION_FAILED
+INFO: INFO: *********************************************
+INFO: INFO: OS Kernel Parameter: file-max: This is a prerequisite condition to test whether the OS kernel parameter "file-max" is properly set.
+INFO: INFO: Severity:IGNORABLE
+INFO: INFO: OverallStatus:VERIFICATION_FAILED
+INFO: INFO: *********************************************
+INFO: INFO: OS Kernel Parameter: rmem_default: This is a prerequisite condition to test whether the OS kernel parameter "rmem_default" is properly set.
+INFO: INFO: Severity:IGNORABLE
+INFO: INFO: OverallStatus:OPERATION_FAILED
+INFO: INFO: *********************************************
+INFO: INFO: OS Kernel Parameter: rmem_max: This is a prerequisite condition to test whether the OS kernel parameter "rmem_max" is properly set.
+INFO: INFO: Severity:IGNORABLE
+INFO: INFO: OverallStatus:OPERATION_FAILED
+INFO: INFO: *********************************************
+INFO: INFO: OS Kernel Parameter: wmem_default: This is a prerequisite condition to test whether the OS kernel parameter "wmem_default" is properly set.
+INFO: INFO: Severity:IGNORABLE
+INFO: INFO: OverallStatus:OPERATION_FAILED
+INFO: INFO: *********************************************
+INFO: INFO: OS Kernel Parameter: wmem_max: This is a prerequisite condition to test whether the OS kernel parameter "wmem_max" is properly set.
+INFO: INFO: Severity:IGNORABLE
+INFO: INFO: OverallStatus:OPERATION_FAILED
+INFO: INFO: -----------------End of failed Tasks List----------------
