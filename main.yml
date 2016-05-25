@@ -9,7 +9,7 @@
         image: "{{ base_image }}"
         command: sleep infinity
         volumes:
-          - "/installers/oracle/db/11.2/database/11.2.0.4:/srv/files"
+          - "/opt/installers/oracle/db/11.2/database/11.2.0.4:/srv/files"
         state: started
 
     - add_host:
