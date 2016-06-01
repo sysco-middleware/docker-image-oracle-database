@@ -43,7 +43,7 @@ into
 </RUNLEVEL>
 ```
 
-To be able to run Oracle Database on Docker containers
+To be able to run Oracle Database on Docker containers.
 
 And run:
 
@@ -51,4 +51,4 @@ And run:
 
 ## Tags
 
-- soa-qs-12.1.3-jdk7-centos7
+- 11.2.0.4-se-oraclelinux6.7
