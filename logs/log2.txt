@@ -1,0 +1,23 @@
+[main] [ 2016-05-25 08:17:28.634 UTC ] [OsUtilsUnix.retrieveOSObject:288]  Exception while retrieving Oip
+chOS object. 0
+java.lang.NullPointerException
+        at oracle.sysman.assistants.util.OsUtilsUnix.getKernelParam(OsUtilsUnix.java:1048)
+        at oracle.sysman.assistants.dbca.backend.MemoryCalculator.calculateMemory(MemoryCalculator.java:2
+03)
+        at oracle.sysman.assistants.dbca.backend.MemoryCalculator.calculateMemory(MemoryCalculator.java:2
+38)
+        at oracle.sysman.assistants.dbca.backend.template.InitParamHandler.endElement(InitParamHandler.ja
+va:617)
+        at oracle.sysman.assistants.util.xmlParsing.ParseManager.endElement(ParseManager.java:120)
+        at oracle.xml.parser.v2.NonValidatingParser.parseElement(NonValidatingParser.java:1647)
+        at oracle.xml.parser.v2.NonValidatingParser.parseRootElement(NonValidatingParser.java:456)
+        at oracle.xml.parser.v2.NonValidatingParser.parseDocument(NonValidatingParser.java:402)
+        at oracle.xml.parser.v2.XMLParser.parse(XMLParser.java:388)
+        at oracle.sysman.assistants.dbca.backend.TemplateManager.parseCloneTemplate(TemplateManager.java:
+1522)
+        at oracle.sysman.assistants.dbca.backend.TemplateManager.loadTemplate(TemplateManager.java:555)
+        at oracle.sysman.assistants.dbca.backend.TemplateManager.loadCurrentTemplate(TemplateManager.java
+:586)
+        at oracle.sysman.assistants.dbca.backend.Host.startOperation(Host.java:2988)
+        at oracle.sysman.assistants.dbca.Dbca.execute(Dbca.java:120)
+        at oracle.sysman.assistants.dbca.Dbca.main(Dbca.java:189)

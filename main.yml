@@ -9,7 +9,7 @@
         image: "{{ base_image }}"
         command: sleep infinity
         volumes:
-          - "/installers/oracle/db/11.2/database/11.2.0.4:/srv/files"
+          - "/opt/installers/oracle/db/12.1/database-se/12.1.0.2:/srv/files"
         state: started
 
     - add_host:
@@ -21,8 +21,7 @@
   connection: docker
   roles:
     - role: sysco-middleware.oracle-database
-      oracle_database_version: 11g
-      oracle_database_release: 11.2.0.4
+      oracle_database_version: 12c
       oracle_database_edition: SE
       oracle_database_installer: /srv/files/database/runInstaller
 
@@ -32,8 +31,7 @@
     - vars/main.yml
   tasks:
     - name: docker commit
-      command: "docker commit tmp-oracle-database {{ image_name }}:{{ item }}"
-      with_items: "{{ tags }}"
+      command: "docker commit tmp-oracle-database {{ image_name }}:{{ tag }}"
 
     - name: docker kill
       command: "docker kill tmp-oracle-database"

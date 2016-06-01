@@ -1,0 +1,13 @@
+[main] [ 2016-05-25 08:17:28.929 UTC ] [OsUtilsUnix.retrieveOSObject:288]  Exception while retrieving Oip
+chOS object. 0
+java.lang.NullPointerException
+        at oracle.sysman.assistants.util.OsUtilsUnix.getKernelParam(OsUtilsUnix.java:1048)
+        at oracle.sysman.assistants.dbca.backend.Verifier.validateKernelParams(Verifier.java:1309)
+        at oracle.sysman.assistants.dbca.backend.Verifier.validateInitParam(Verifier.java:1300)
+        at oracle.sysman.assistants.dbca.backend.Verifier.validate(Verifier.java:812)
+        at oracle.sysman.assistants.dbca.backend.Host.validate(Host.java:4687)
+        at oracle.sysman.assistants.dbca.backend.SilentHost.performOperation(SilentHost.java:566)
+        at oracle.sysman.assistants.dbca.backend.Host.startOperation(Host.java:3630)
+        at oracle.sysman.assistants.dbca.Dbca.execute(Dbca.java:120)
+        at oracle.sysman.assistants.dbca.Dbca.main(Dbca.java:189)
+/usr/bin/who -r failed or gave unexpected result. Unable to fetch current runlevel.

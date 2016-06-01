@@ -1,5 +1,3 @@
 base_image: syscomiddleware/oraclelinux:6.7
 image_name: syscomiddleware/oracle-database
-tags:
-  - latest
-  - oraclelinux-11.2.0.4
+tag: 12.1.0.2-se-oraclelinux6.7
